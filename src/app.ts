@@ -4,6 +4,18 @@
 
 // import Employee from "./readonly";
 
+let sales: number = 123_456_789;
+
+console.log(sales);
+
+/**
+ * Enum type
+ */
+
+enum Size {small = 2, medium, large };
+const ss: Size = Size.medium;
+
+console.log(`this is ss ${ss} - `, ss)
 class Friuts {
     constructor(public id: number, public name: string, private type: string) {
         console.log(`I am eating ${id} ${name} in Constructor which is ${type} food !!`);

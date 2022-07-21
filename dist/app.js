@@ -3,6 +3,20 @@
 // // document.write(test); // use this line if 'defer' is removed in index.html
 // console.info(test);
 // import Employee from "./readonly";
+let sales = 123456789;
+console.log(sales);
+/**
+ * Enum type
+ */
+var Size;
+(function (Size) {
+    Size[Size["small"] = 2] = "small";
+    Size[Size["medium"] = 3] = "medium";
+    Size[Size["large"] = 4] = "large";
+})(Size || (Size = {}));
+;
+const ss = Size.medium;
+console.log(`this is ss ${ss} - `, ss);
 class Friuts {
     constructor(id, name, type) {
         this.id = id;
