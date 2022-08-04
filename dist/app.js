@@ -2,7 +2,8 @@
 // const test = "this is test log";
 // // document.write(test); // use this line if 'defer' is removed in index.html
 // console.info(test);
-// import Employee from "./readonly";
+Object.defineProperty(exports, "__esModule", { value: true });
+const readonly_1 = require("./readonly");
 let sales = 123456789;
 console.log(sales);
 /**
@@ -30,8 +31,8 @@ const secondFruite = new Friuts(4, 'Apple', 'more healthy');
 /**
  * for 'readonly test
  */
-// const empDetails = new Employee(1, 'Arvind Kushwaha');
-// empDetails.name = 'Arvind2';
-// console.log(empDetails.getEmployee());
-// empDetails.alterEmployee(1, 'Arvind3');
-// console.log(empDetails.getEmployee());
+const empDetails = new readonly_1.Employee(1, 'Arvind Kushwaha');
+empDetails.name = 'Arvind2';
+console.log(empDetails.getEmployee());
+empDetails.alterEmployee(1, 'Arvind3');
+console.log(empDetails.getEmployee());

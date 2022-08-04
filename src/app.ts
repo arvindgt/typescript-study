@@ -2,7 +2,7 @@
 // // document.write(test); // use this line if 'defer' is removed in index.html
 // console.info(test);
 
-// import Employee from "./readonly";
+import { Employee } from "./readonly";
 
 let sales: number = 123_456_789;
 
@@ -29,10 +29,10 @@ const secondFruite = new Friuts(4, 'Apple', 'more healthy');
 /**
  * for 'readonly test
  */
-// const empDetails = new Employee(1, 'Arvind Kushwaha');
+const empDetails = new Employee(1, 'Arvind Kushwaha');
 
-// empDetails.name = 'Arvind2';
-// console.log(empDetails.getEmployee());
+empDetails.name = 'Arvind2';
+console.log(empDetails.getEmployee());
 
-// empDetails.alterEmployee(1, 'Arvind3');
-// console.log(empDetails.getEmployee());
+empDetails.alterEmployee(1, 'Arvind3');
+console.log(empDetails.getEmployee());

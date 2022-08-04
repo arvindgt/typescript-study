@@ -1,4 +1,6 @@
 "use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.Employee = void 0;
 class Employee {
     constructor(id, name) {
         this.id = id;
@@ -13,9 +15,10 @@ class Employee {
         return `Employee ${this.id} is ${this.name}`;
     }
 }
-const empDetails = new Employee(1, 'Arvind Kushwaha');
-empDetails.name = 'Arvind2';
-console.log(empDetails.getEmployee());
-empDetails.alterEmployee(1, 'Arvind3');
-console.log(empDetails.getEmployee());
+exports.Employee = Employee;
+// const empDetails = new Employee(1, 'Arvind Kushwaha');
+// empDetails.name = 'Arvind2';
+// console.log(empDetails.getEmployee());
+// empDetails.alterEmployee(1, 'Arvind3');
+// console.log(empDetails.getEmployee());
 // export default Employee;

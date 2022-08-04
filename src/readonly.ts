@@ -1,4 +1,4 @@
-class Employee {
+export class Employee {
     constructor(private readonly id: number, public name: string) {
         console.info(`Employee ${id} name is - ${name}`);
     }
@@ -13,13 +13,13 @@ class Employee {
     }
 }
 
-const empDetails = new Employee(1, 'Arvind Kushwaha');
+// const empDetails = new Employee(1, 'Arvind Kushwaha');
 
-empDetails.name = 'Arvind2';
-console.log(empDetails.getEmployee());
+// empDetails.name = 'Arvind2';
+// console.log(empDetails.getEmployee());
 
-empDetails.alterEmployee(1, 'Arvind3');
-console.log(empDetails.getEmployee());
+// empDetails.alterEmployee(1, 'Arvind3');
+// console.log(empDetails.getEmployee());
 
 
 // export default Employee;
